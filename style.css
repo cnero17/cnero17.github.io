@@ -12,16 +12,17 @@ body {
 /* navigation menu */
 nav {
     background: rgba(193, 192, 248, 0.823);
-   margin: 0 auto;
+   margin: 10 auto;
     display: flex;
     padding: 10px;
+    border-radius: 30px;
 }
 h1 {
     display: flex;
     align-items: center;
     color: rgb(229, 194, 240);
     flex: 1;
-    margin: 0;
+    margin: 10;
 }
 #nav-ul {
     list-style-image: none;
@@ -39,6 +40,7 @@ a {
 main {
     background: rgba(193, 192, 248, 0.823);
     display: flex;
+    border-radius: 30px;
 }
 .sidebar {
     margin-right: 25px;
