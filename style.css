@@ -1,9 +1,11 @@
-body {
+body { 
     background: rgb(234, 203, 219);
-    color: #c9d8f9
     padding: 10px;
-    font-family: 'times new roman';
+    color: #c9d8f9
+    font-family arial;
 }
+   
+
 #all-contents {
   max-width: 800px;
     margin: auto;
@@ -12,38 +14,33 @@ body {
 /* navigation menu */
 nav {
     background: rgba(193, 192, 248, 0.823);
-    border-radius: 30px;
    margin: 0 auto;
-   margin-bottom: 20px;
     display: flex;
     padding: 10px;
 }
 h1 {
     display: flex;
     align-items: center;
-    color: #c9d8f9
+    color: white;
     flex: 1;
     margin: 0;
 }
 #nav-ul {
     list-style-image: none;
-    color:#c9d8f9
 }
 .nav-li {
-    display: flex;
+    display: inline-block;
     padding: 0 10px;
-    color:#c9d8f9
 }
 a {
     text-decoration: none;
-    color: #c9d8f9;
+    color: #c9d8f9
 }
 
 /* main container area beneath menu */
 main {
-    background: rgba(193, 192, 248, 0.823);
-    border-radius: 30px;
-    display: flex;
+    background: rgba(193, 192, 248, 0.823)
+    display flex;
 }
 .sidebar {
     margin-right: 25px;
@@ -65,4 +62,3 @@ main {
 h2, h3 {
     margin: 0px;
 }
-
