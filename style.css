@@ -20,7 +20,7 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color: rgb(229, 194, 240);
+    color: rgb(200, 123, 173);
     flex: 1;
     margin: 10;
 }
@@ -33,14 +33,17 @@ h1 {
 }
 a {
     text-decoration: none;
-    color: #c9d8f9;
+    color: rgb(200, 123, 173);
 }
+
+
 
 /* main container area beneath menu */
 main {
     background: rgba(193, 192, 248, 0.823);
     display: flex;
     border-radius: 30px;
+    margin-top: 3%;
 }
 .sidebar {
     margin-right: 25px;
@@ -52,12 +55,14 @@ main {
 .content {
     flex: 1;
     padding: 15px;
+    color: rgb(200, 123, 173);
 }
 
 /* portfolio styles */
 #interests {
     border: 4px rgba(232, 177, 236, 0) ridge;
     padding: 8px;
+    color: rgb(200, 123, 173);
 }
 h2, h3 {
     margin: 0px;
