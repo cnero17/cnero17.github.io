@@ -9,6 +9,7 @@ $(function () {
       halleImage = document.getElementById("player");
       projectileImage = document.getElementById("projectile");
       cannonImage = document.getElementById("cannon");
+      platformImage = document.getElementById("platform");
       $(document).on("keydown", handleKeyDown);
       $(document).on("keyup", handleKeyUp);
       firstTimeSetup = false;
@@ -44,10 +45,17 @@ $(function () {
     /////////////////////////////////////////////////
 
     // TODO 1
-    // Create platforms
+    // Create platform
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-
+createPlatform(300, 550, 150, 60);
+createPlatform(1200, 150, 150, 60);
+createPlatform(890, 250, 150, 60);
+createPlatform(700, 400, 150, 60);
+createPlatform(1000, 500, 150, 60);
+createPlatform(660, 650, 150, 60);
+createPlatform(100, 400, 150, 60);
+createPlatform(400, 270, 150, 60);
 
 
     
@@ -57,7 +65,10 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-
+    createCollectable("chest", 1260, 74, 0, 0); 
+    createCollectable("gem", 715, 334, 0, 0);
+    createCollectable("gem", 360, 480, 0, 0)
+    createCollectable("gem", 1080, 430, 0, 0)
 
 
     // TODO 3
@@ -65,7 +76,10 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-
+createCannon("left", 500, 1700)
+createCannon("left", 260, 1700)
+createCannon("right", 250, 1700)
+createCannon("bottom", 1170, 1700, )
 
 
 

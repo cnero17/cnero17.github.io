@@ -2,8 +2,8 @@
 const walkAcceleration = 2.5; // how much is added to the speed each frame
 const gravity = 0.5; // how much is subtracted from speedY each frame
 const friction = 1.5; // how much the player is slowed each frame
-const maxSpeed = 8; // maximum horizontal speed, not vertical
-const playerJumpStrength = 12; // this is subtracted from the speedY each jump
+const maxSpeed = 7; // maximum horizontal speed, not vertical
+const playerJumpStrength = 15; // this is subtracted from the speedY each jump
 const projectileSpeed = 8; // the speed of projectiles
 
 /////////////////////////////////////////////////
@@ -12,7 +12,7 @@ const projectileSpeed = 8; // the speed of projectiles
 
 // Base game variables
 const frameRate = 60;
-const playerScale = 0.8; //makes the player just a bit smaller. Doesn't affect the hitbox, just the image
+const playerScale = 1; //makes the player just a bit smaller. Doesn't affect the hitbox, just the image
 
 // Player variables
 const player = {
@@ -74,11 +74,12 @@ let cannons = [];
 const cannonWidth = 118;
 const cannonHeight = 80;
 let projectiles = [];
-const defaultProjectileWidth = 24;
+const defaultProjectileWidth = 30;
 const defaultProjectileHeight = defaultProjectileWidth;
-const collectableWidth = 40;
-const collectableHeight = 40;
+const collectableWidth = 50;
+const collectableHeight = 50;
 let collectables = [];
+
 
 // canvas and context variables; must be initialized later
 let canvas;
@@ -91,10 +92,11 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  database: { image: "images/collectables/database.png" },
-  diamond: { image: "images/collectables/diamond-head.png" },
-  grace: { image: "images/collectables/grace-head.png" },
-  kennedi: { image: "images/collectables/kennedi-head.png" },
-  max: { image: "images/collectables/max-head.png" },
-  steve: { image: "images/collectables/steve-head.png" },
+  gem: { image: "images/collectables/pngegg (4).png" },
+  chest: { image: "images/collectables/pngegg (4).png" },
 };
+
+var platformList = {
+  Block: { image: "images/platform/pngwing.com (10).png"}
+};
+  
