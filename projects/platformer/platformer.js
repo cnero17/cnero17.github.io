@@ -79,7 +79,7 @@ createPlatform(400, 270, 150, 60);
 createCannon("left", 500, 1700)
 createCannon("left", 260, 1700)
 createCannon("right", 250, 1700)
-createCannon("bottom", 1170, 1700, )
+createCannon("bottom", 1170, 1700)
 
 
 
